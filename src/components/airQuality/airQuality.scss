@@ -1,0 +1,23 @@
+.maps{
+  padding: 50px 0;
+
+  &__title{
+    text-align: center;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    color: #fff;
+  }
+
+  &__map{
+    height: 560px;
+    margin: 42px 0;
+  }
+
+  &__text{
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: #fff;
+  }
+}

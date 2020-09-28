@@ -70,7 +70,9 @@ function App() {
           title="Основные факты"
           slides={factsSlides}
       />
-      <AirQuality/>
+      <AirQuality
+          title="Индекс качества воздуха в режиме реального времени"
+      />
       <Sectors/>
       <Footer/>
     </>
