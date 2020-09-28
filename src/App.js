@@ -24,11 +24,11 @@ function App() {
         },
         {
             title: "Индекс качества воздуха",
-            href: "#quality"
+            href: "#maps"
         },
         {
             title: "Политика по уменьшению загрязнений",
-            href: "#politics"
+            href: "#sectors"
         }
     ];
     const factsSlides = [

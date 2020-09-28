@@ -11,11 +11,11 @@ const Header = ({title, logos, links}) => {
                 <div className="header__partners">
                     {logosImages}
                 </div>
-                <h1 className="header__title">{title}</h1>
                 <div className="header__nav">
                     {navLinks}
                 </div>
-                <a href="#" className="header__btn">Отследить</a>
+                <h1 className="header__title">{title}</h1>
+                <a href="#maps" className="header__btn">Отследить</a>
             </div>
         </section>
     );
