@@ -11,7 +11,7 @@ const Header = ({title, logos, links}) => {
                 <div className="header__partners">
                     {logosImages}
                 </div>
-                <h1 class="header__title">{title}</h1>
+                <h1 className="header__title">{title}</h1>
                 <div className="header__nav">
                     {navLinks}
                 </div>
