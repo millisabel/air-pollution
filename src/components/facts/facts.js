@@ -18,7 +18,7 @@ const Facts = ({title, slides}) => {
     </SwiperSlide>);
 
     return (
-        <section className="facts">
+        <section className="facts" id="facts">
             <div className="container">
                 <h2 className="facts__title">{title}</h2>
                 <Swiper
