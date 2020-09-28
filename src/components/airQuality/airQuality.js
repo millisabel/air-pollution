@@ -13,7 +13,6 @@ const AirQuality = ({title}) => {
         lat: 48.3,
         zoom: 5
     });
-
     useEffect(() => {
         const map = new mapboxgl.Map({
             container: mapContainer.current,
@@ -24,7 +23,7 @@ const AirQuality = ({title}) => {
     }, [])
 
     return (
-        <section className="maps">
+        <section className="maps" id="maps">
             <div className="container">
                 <h2 className="maps__title">{title}</h2>
                 <div className="maps__map" ref={mapContainer}/>
