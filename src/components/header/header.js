@@ -16,6 +16,7 @@ const Header = ({title, logos, links}) => {
                 </div>
                 <h1 className="header__title">{title}</h1>
                 <a href="#maps" className="header__btn">Отследить</a>
+                <div className="header__toBottom"> </div>
             </div>
         </section>
     );

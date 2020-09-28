@@ -4,9 +4,14 @@
   &__title{
     text-align: center;
     font-weight: normal;
-    font-size: 35px;
-    line-height: 41px;
+    font-size: 27px;
+    line-height: 32px;
     color: #fff;
+
+    @media (min-width: 576px){
+      font-size: 35px;
+      line-height: 41px;
+    }
   }
 
   &__map{
