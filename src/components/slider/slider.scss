@@ -1,0 +1,165 @@
+
+
+.slider{
+  position: relative;
+  width: 358px;
+  margin: 0 auto;
+
+  @media (min-width: 576px){
+    width: calc(100% - 120px);
+  }
+
+  @media (min-width: 1400px){
+    width: 100%
+  }
+
+  &__item {
+    width: 274px;
+    //min-height: 338px;
+    margin: 0 auto 40px;    box-shadow: 1px 1px 20px #595959;
+
+    @media (min-width: 1440px) {
+      width: 387px;
+      //height: auto;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+    @media (min-width: 576px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__desc {
+    padding: 0 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+
+    @media (min-width: 576px) {
+      font-size: 27px;
+      line-height: 32px;
+    }
+  }
+
+  &__containerThumbs{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 358px;
+    height: 221px;
+    margin: 0 auto;
+
+    background-size: cover;
+
+    @media (min-width: 576px){
+      display: none;
+    }
+
+    & .swiper-slide:first-child{
+      opacity: 0;
+    }
+
+    & .swiper-slide.swiper-slide-next:last-child{
+      opacity: 0;
+    }
+  }
+
+  &__thumbs{
+    flex-grow: 1;
+    width: auto;
+    height: 221px;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  //=========== swiper =================
+
+
+  & .swiper-slide{
+    width: 274px;
+
+    @media (min-width: 1440px) {
+      width: 387px;
+      //height: auto;
+    }
+  }
+
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    top: 40%;
+    display: none;
+    color: #B78A3F;
+
+    @media (min-width: 576px) {
+      display: block;
+    }
+  }
+
+  & .swiper-button-prev {
+    left: -50px;
+  }
+
+  & .swiper-button-next {
+    right: -50px;
+  }
+
+  &  .swiper-button-disabled {
+    opacity: 0;
+  }
+
+  & .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+
+    border: 1px solid #B78A3F;
+
+    background: transparent;
+    opacity: 1;
+    transition: 0.5s;
+
+    @media (min-width: 576px){
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  & .swiper-container-horizontal  .swiper-pagination-bullet {
+    margin: 0 8px;
+
+    @media (min-width: 576px){
+      margin: 0 20px;
+    }
+  }
+
+  & .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    margin: 0 8px;
+    bottom: 5px;
+
+    @media (min-width: 576px){
+      margin: 0 20px;
+      bottom: 10px;
+    }
+  }
+
+  &  .swiper-pagination-bullet-active {
+    background: #B78A3F;
+
+  }
+}
+

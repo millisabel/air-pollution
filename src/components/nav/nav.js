@@ -2,7 +2,7 @@ import React from 'react';
 import "./nav.scss";
 
 const Nav = ({links, onClick}) => {
-    const navLinks = links.map((link, i) => <a href={link.href} className="menu__item" key={i}>{link.title}</a>);
+    const navLinks = links.map((link, i) => <a href={link.href} className="menu__item" key={i} onClick={() => onClick()}>{link.title}</a>);
 
     return (
         <div>

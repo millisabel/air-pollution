@@ -6,7 +6,7 @@ import "./btn.scss";
 
 const Header = ({title, logos, links}) => {
     const logosImages = logos.map((logo, i) => <img src={logo} alt="partner logo" className="header__partners-item" key={i}/>);
-    const navLinks = links.map((link, i) => <a href={link.href} className="menu__item" key={i}>{link.title}</a>);
+    const navLinks = links.map((link, i) => <a href={link.href} className="header__nav-item" key={i}>{link.title}</a>);
 
     let [isMenuOpen, setMenuStatus] = useState(false);
     const closeMenu = () => {
@@ -30,7 +30,7 @@ const Header = ({title, logos, links}) => {
                     <MediaQuery minDeviceWidth={1200}>
                         {(matches) =>
                             matches
-                                ? <p>{navLinks}</p>
+                                ? <div>{navLinks}</div>
                                 : <div>{isMenuOpen ? navMenu : null}</div>
                         }
                     </MediaQuery>
