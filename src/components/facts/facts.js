@@ -21,32 +21,37 @@ const Facts = ({title, slides}) => {
         <section className="facts" id="facts">
             <div className="container">
                 <h2 className="facts__title">{title}</h2>
-                <Swiper
-                    slidesPerView = {1}
-                    pagination={{ clickable: true }}
-                    navigation={{
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    }}
-                    breakpoints = {
-                        {
-                            600: {
-                                slidesPerView: 2,
-                                spaceBetween: 20,
-                                slidesPerGroup: 2,
-                            },
-                            1200: {
-                                slidesPerView: 3,
-                                spaceBetween: 40,
-                                slidesPerGroup: 3,
-                            },
+                <div className="facts__slider">
+                    <Swiper
+                        autoHeight = {true}
+                        spaceBetween={10}
+                        slidesPerView = {1}
+                        slidesPerGroup = {1}
+                        pagination={{ clickable: true }}
+                        navigation={{
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        }}
+                        breakpoints = {
+                            {
+                                800: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 10,
+                                    slidesPerGroup: 2,
+                                },
+                                1200: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 40,
+                                    slidesPerGroup: 3,
+                                },
+                            }
                         }
-                    }
-                >
-                    {factsSlides}
-                </Swiper>
-                <div className="swiper-button-prev"/>
-                <div className="swiper-button-next"/>
+                    >
+                        {factsSlides}
+                    </Swiper>
+                    <div className="swiper-button-prev"/>
+                    <div className="swiper-button-next"/>
+                </div>
             </div>
         </section>
     );
