@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 
 const SectorsItem = ({sector, number}) => {
     const [isToolTipShowing, setToolTipShowing] = useState(false);
-    const [isDirectionSwitched, setDirectionSwitched] = useState(false)
+    const [isDirectionSwitched, setDirectionSwitched] = useState(false);
     const toggleToolTip = (newValue) => {
         setDirectionSwitched(number % 3 === 0);
         setToolTipShowing(newValue);
-    }
+    };
     return (
         <div className="sectors__item"
              onMouseEnter={() => toggleToolTip(true)}
