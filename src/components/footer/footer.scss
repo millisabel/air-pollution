@@ -2,34 +2,74 @@
   padding: 10px 0;
   border-top: 1px solid #FFFFFF;
 
+  @media (min-width: 576px){
+
+  }
+
   &__partners{
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    width: 50%;
-    height: 70px;
-    margin-bottom: 30px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 58px;
+
+    @media (min-width: 576px){
+      width: 50%;
+      height: 70px;
+      margin-bottom: 30px;
+    }
+
+    &-item{
+      max-width: 80px;
+      height: auto;
+    }
   }
 
   &__wrap{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    margin-bottom: 82px;
+
+    @media (min-width: 576px){
+      flex-direction: row;
+      justify-content: space-between;
+
+      margin-bottom: 0;
+    }
   }
 
   &__nav{
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 95px;
+    margin-bottom: 105px;
+
+    text-align: center;
+
+    @media (min-width: 576px){
+      margin-bottom: 95px;
+
+      text-align: left;
+    }
 
     &-link {
+      margin-bottom: 10px;
+
       font-weight: normal;
-      font-size: 17px;
-      line-height: 20px;
+      font-size: 15px;
+      line-height: 18px;
       text-decoration: none;
       color: #fff;
-      margin-bottom: 20px;
+
+      @media (min-width: 576px){
+        margin-bottom: 20px;
+
+        font-size: 17px;
+        line-height: 20px;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -44,9 +84,15 @@
   &__text{
     width: 366px;
     font-weight: normal;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 19px;
+
     color: #fff;
+
+    @media (min-width: 576px){
+      font-size: 17px;
+      line-height: 20px;
+    }
 
     &>span{
       color: #EDE852;
@@ -54,16 +100,26 @@
   }
 
   &__copy{
-    margin-bottom: 14px;
+    margin-bottom: 8px;
 
     font-weight: 300;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 10px;
+    line-height: 18px;
     color: #fff;
+    text-align: center;
+
+    @media (min-width: 576px){
+      margin-bottom: 14px;
+
+      font-size: 14px;
+      line-height: 14px;
+      text-align: left;
+    }
 
     & a{
       display: block;
 
+      line-height: 12px;
       color: #fff;
       text-decoration: none;
 
