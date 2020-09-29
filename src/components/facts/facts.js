@@ -34,12 +34,12 @@ const Facts = ({title, slides}) => {
                         }}
                         breakpoints = {
                             {
-                                800: {
+                                900: {
                                     slidesPerView: 2,
                                     spaceBetween: 10,
                                     slidesPerGroup: 2,
                                 },
-                                1200: {
+                                1400: {
                                     slidesPerView: 3,
                                     spaceBetween: 40,
                                     slidesPerGroup: 3,
