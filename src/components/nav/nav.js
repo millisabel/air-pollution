@@ -18,8 +18,8 @@ const Nav = ({links, onClick}) => {
                 <nav className="menu__links">{navLinks} </nav>
                 <div className="menu__copy">
                     <p>2020, Все права защищены</p>
-                    <a href="#">Согласие на обработку персональных данных</a>
-                    <a href="#">Политика конфиденциальности</a>
+                    <span>Согласие на обработку персональных данных</span>
+                    <span>Политика конфиденциальности</span>
                 </div>
             </div>
         </div>

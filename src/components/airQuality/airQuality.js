@@ -20,7 +20,7 @@ const AirQuality = ({title}) => {
             center: [locationInfo.lng, locationInfo.lat],
             zoom: locationInfo.zoom
         });
-    }, [])
+    }, []);
 
     return (
         <section className="maps" id="maps">

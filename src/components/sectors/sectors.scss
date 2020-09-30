@@ -51,6 +51,8 @@
     position: relative;
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     width: 100%;
@@ -68,13 +70,25 @@
       margin-bottom: 45px;
     }
 
-    @media (min-width: 1400px) {
+    @media (min-width: 1300px) {
       width: calc((100% / 3) - 70px);
       height: 205px;
       margin-bottom: 45px;
     }
 
+    &--open{
+      @media (max-width: 576px) {
+        height: auto;
+      }
+
+      @media (min-width: 576px) and  (max-width: 1300px) {
+        justify-content: flex-start;
+      }
+    }
+
     &-name{
+      position: relative;
+
       width: 100%;
 
       text-align: center;
@@ -82,23 +96,81 @@
       line-height: 29px;
       color: #222222;
 
-      background: rgba(255, 255, 255, 0.83);
+      background: rgba(255, 255, 255, 0.8);
+      user-select: none;
+
+      transition: all 0.5s ease;
+
+      overflow: hidden;
+
+      .sectors__item--open &{
+
+        @media (max-width: 1300px){
+          padding: 70px 0 33px;
+          &:hover{
+            cursor: auto;
+            color: #222222;
+          }
+
+          &::after{
+            content: none;
+          }
+        }
+
+      }
+
+      @media (max-width: 1300px) {
+        &:hover{
+          cursor: pointer;
+        }
+
+        &::after {
+          content: " ";
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+
+          display: block;
+          width: 100%;
+          height: 100%;
+
+          transition: all 0.5s ease;
+        }
+
+        &:focus,
+        &:hover {
+          z-index: 0;
+          color: #fff;
+
+          &:after {
+            transition: all 0.5s ease;
+          }
+        }
+
+        &::after{
+          transform: scale(0);
+        }
+
+        &:focus,
+        &:hover {
+          &:after {
+            background: #B78A3F;
+
+            transform: scale(1);
+          }
+        }
+      }
 
       @media (min-width: 576px) {
-        display: block;
-
         line-height: 30px;
       }
     }
 
-    &-tooltip{
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
-
+    &-tooltip {
       width: 100%;
-      padding: 138px 8px 30px 24px;
+      padding: 16px 8px 30px 24px;
 
       font-style: normal;
       font-weight: normal;
@@ -110,27 +182,88 @@
       appearance: none;
 
       background: rgba(255, 255, 255, 0.8);
+      user-select: none;
       animation: fadeIn 0.4s ease-in-out;
 
-
-      @media (min-width: 1200px) {
-        left: 100%;
+      @media (min-width: 576px) {
+        position: absolute;
+        top: 133px;
+        left: 0;
         z-index: 1;
+      }
+
+      @media (min-width: 1300px) {
+        top: 0;
+        left: 100%;
 
         width: 440px;
         padding: 16px 16px 20px 75px;
 
         clip-path: polygon(100% 0, 100% 100%, 75px 100%, 0 50%, 75px 0);
       }
+
+      &:first-letter{
+        text-transform: uppercase;
+      }
     }
 
     &-switched {
-      @media (min-width: 1200px) {
+      @media (min-width: 1300px) {
         left: initial;
         right: 100%;
 
         clip-path: polygon(calc(100% - 75px) 0, 100% 50%, calc(100% - 75px) 100%, 0 100%, 0 0);
         padding: 16px 75px 16px 16px;
+      }
+    }
+
+    &-btn{
+      display: block;
+
+      @media (min-width: 1300px) {
+        display: none;
+      }
+
+      .sectors__item--open &{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+
+        border: none;
+        background: transparent;
+
+        @media (min-width: 1300px) {
+          display: none;
+        }
+
+        &::after,
+        &::before{
+          position: absolute;
+          top: -2px;
+
+          content: "";
+
+          width: 2px;
+          height: 25px;
+
+          background: #000;
+          transition: 0.5s;
+        }
+
+        &::after{
+          transform: rotate(45deg);
+        }
+
+        &::before{
+          transform: rotate(-45deg);
+        }
       }
     }
   }
