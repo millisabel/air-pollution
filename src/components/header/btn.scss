@@ -71,6 +71,12 @@
     }
   }
 
+  &--fixed{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
   &:focus,
   &:hover{
     transform: rotate(360deg);

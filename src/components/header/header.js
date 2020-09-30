@@ -14,16 +14,31 @@ const Header = ({title, logos, links}) => {
     };
     const navMenu = <Nav links={links} onClick={closeMenu}/>;
 
+    let [btnFixed, setBtn] = useState(false);
+    const handleScroll=()=>{
+        if(window.scrollY > 200){
+            setBtnPosition(true);
+        }
+        else{
+            setBtnPosition(false);
+        }
+    };
+    const setBtnPosition = (newValue) => {
+        setBtn(newValue);
+    };
+
     return (
-        <section className="header">
+        <section className="header" onWheel={()=>handleScroll()}>
             <div className="container">
                 <div className="header__wrap">
                     <div className="header__partners">
                         {logosImages}
                     </div>
-                    <button className="btn btn--menu"
-                            onClick = {() => closeMenu()}
-                    ><span/></button>
+                    <button
+                        className= {btnFixed ? "btn btn--menu btn--fixed" : "btn btn--menu btn--lala"}
+                        onClick = {() => closeMenu()}>
+                        <span/>
+                    </button>
                 </div>
                 <MediaQuery minDeviceWidth={1300}>
                     {(matches) =>

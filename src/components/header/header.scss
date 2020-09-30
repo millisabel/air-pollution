@@ -5,7 +5,7 @@
   background-size: cover;
 
   @media (min-width: 576px) {
-    padding: 20px 0 175px;
+    padding: 20px 0 75px;
   }
 
   @media (min-width: 900px) {
@@ -22,7 +22,7 @@
     margin-bottom: 225px;
 
     @media (min-width: 576px) {
-      margin-bottom: 100px;
+      margin-bottom: 150px;
     }
 
     @media (min-width: 1300px) {
@@ -40,6 +40,7 @@
     color: #fff;
 
     @media (min-width: 576px) {
+      margin-bottom: 175px;
       text-align: center;
     }
 
