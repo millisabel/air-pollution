@@ -25,16 +25,13 @@ const Header = ({title, logos, links}) => {
                             onClick = {() => closeMenu()}
                     ><span/></button>
                 </div>
-                <div className="header__nav">
-
-                    <MediaQuery minDeviceWidth={1200}>
-                        {(matches) =>
-                            matches
-                                ? <div>{navLinks}</div>
-                                : <div>{isMenuOpen ? navMenu : null}</div>
-                        }
-                    </MediaQuery>
-                </div>
+                <MediaQuery minDeviceWidth={1300}>
+                    {(matches) =>
+                        matches
+                            ? <div className="header__nav">{navLinks}</div>
+                            : <div>{isMenuOpen ? navMenu : null}</div>
+                    }
+                </MediaQuery>
                 <h1 className="header__title">{title}</h1>
                 <a href="#maps" className="header__btn">Отследить</a>
                 <div className="header__toBottom"> </div>
