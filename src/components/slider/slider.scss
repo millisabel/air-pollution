@@ -1,4 +1,6 @@
-
+.facts>.container{
+  overflow: hidden;
+}
 
 .slider{
   position: relative;
@@ -6,20 +8,24 @@
   margin: 0 auto;
 
   @media (min-width: 576px){
+    width: 60%;
+  }
+
+  @media (min-width: 900px){
+    width: 100%;
+  }
+
+  @media (min-width: 1300px){
     width: calc(100% - 120px);
   }
 
-  @media (min-width: 1400px){
-    width: 100%
-  }
-
   &__item {
-    width: 274px;
+    max-width: 274px;
     //min-height: 338px;
-    margin: 0 auto 40px;    box-shadow: 1px 1px 20px #595959;
+    margin: 0 auto 40px;
 
-    @media (min-width: 1440px) {
-      width: 387px;
+    @media (min-width: 1300px) {
+      max-width: 387px;
       //height: auto;
     }
   }
@@ -29,9 +35,11 @@
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+    box-shadow: 1px 1px 20px #595959;
 
     @media (min-width: 576px) {
       margin-bottom: 40px;
+      box-shadow: none;
     }
   }
 
@@ -94,7 +102,7 @@
   & .swiper-slide{
     width: 274px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1300px) {
       width: 387px;
       //height: auto;
     }
@@ -102,21 +110,76 @@
 
   & .swiper-button-prev,
   & .swiper-button-next {
-    top: 40%;
-    display: none;
+    position: absolute;
+    top: 60px;
+
+    //display: none;
+    width: 50px;
+    height: 225px;
     color: #B78A3F;
 
     @media (min-width: 576px) {
+      position: absolute;
+      top: 40%;
+
       display: block;
+      width: auto;
+      height: auto;
+    }
+
+    &::after{
+      position: absolute;
+
+      @media (min-width: 576px) {
+        position: relative;
+      }
     }
   }
 
   & .swiper-button-prev {
-    left: -50px;
+    left: -10px;
+
+    @media (min-width: 576px) {
+      left: -50px;
+    }
+
+    @media (min-width: 900px) {
+      left: 0;
+    }
+
+    @media (min-width: 1300px) {
+      left: -50px;
+    }
+
+    &::after{
+        left: -20px;
+      @media (min-width: 576px) {
+        left: auto;
+      }
+    }
   }
 
   & .swiper-button-next {
-    right: -50px;
+    right: -10px;
+
+    @media (min-width: 576px) {
+      right: -50px;
+    }
+
+    @media (min-width: 900px) {
+      right: 0;
+    }
+
+    @media (min-width: 1300px) {
+      right: -50px;
+    }
+
+    &::after{
+      right: -20px;
+      @media (min-width: 576px) {
+        right: auto;
+      }
+    }
   }
 
   &  .swiper-button-disabled {
