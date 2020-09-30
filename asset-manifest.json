@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/air-pollution/static/css/main.50470115.chunk.css",
+    "main.js": "/air-pollution/static/js/main.fc6c78f3.chunk.js",
+    "main.js.map": "/air-pollution/static/js/main.fc6c78f3.chunk.js.map",
+    "runtime-main.js": "/air-pollution/static/js/runtime-main.8199f09a.js",
+    "runtime-main.js.map": "/air-pollution/static/js/runtime-main.8199f09a.js.map",
+    "static/css/2.e0686c58.chunk.css": "/air-pollution/static/css/2.e0686c58.chunk.css",
+    "static/js/2.24e839c2.chunk.js": "/air-pollution/static/js/2.24e839c2.chunk.js",
+    "static/js/2.24e839c2.chunk.js.map": "/air-pollution/static/js/2.24e839c2.chunk.js.map",
+    "index.html": "/air-pollution/index.html",
+    "precache-manifest.3fcd11aca0074eee1e16ebbb6ff61ea8.js": "/air-pollution/precache-manifest.3fcd11aca0074eee1e16ebbb6ff61ea8.js",
+    "service-worker.js": "/air-pollution/service-worker.js",
+    "static/css/2.e0686c58.chunk.css.map": "/air-pollution/static/css/2.e0686c58.chunk.css.map",
+    "static/css/main.50470115.chunk.css.map": "/air-pollution/static/css/main.50470115.chunk.css.map",
+    "static/js/2.24e839c2.chunk.js.LICENSE.txt": "/air-pollution/static/js/2.24e839c2.chunk.js.LICENSE.txt",
+    "static/media/header.scss": "/air-pollution/static/media/header_bg.e7fd60ee.jpg",
+    "static/media/logo_1.svg": "/air-pollution/static/media/logo_1.24e064dc.svg",
+    "static/media/logo_2.svg": "/air-pollution/static/media/logo_2.2f311a05.svg",
+    "static/media/logo_3.svg": "/air-pollution/static/media/logo_3.0662d9de.svg",
+    "static/media/sectors_1.jpg": "/air-pollution/static/media/sectors_1.61cc1648.jpg",
+    "static/media/sectors_2.jpg": "/air-pollution/static/media/sectors_2.91feae3f.jpg",
+    "static/media/sectors_3.jpg": "/air-pollution/static/media/sectors_3.02cd1c72.jpg",
+    "static/media/sectors_4.jpg": "/air-pollution/static/media/sectors_4.f9eebf67.jpg",
+    "static/media/sectors_5.jpg": "/air-pollution/static/media/sectors_5.cb7774c0.jpg",
+    "static/media/sectors_6.jpg": "/air-pollution/static/media/sectors_6.3792da8d.jpg",
+    "static/media/slide-1.jpg": "/air-pollution/static/media/slide-1.b16f6325.jpg",
+    "static/media/slide-2.jpg": "/air-pollution/static/media/slide-2.dd95c71c.jpg",
+    "static/media/slide-3.jpg": "/air-pollution/static/media/slide-3.c1ce7f53.jpg",
+    "static/media/slide-4.jpg": "/air-pollution/static/media/slide-4.f4d0fc38.jpg",
+    "static/media/slide-5.jpg": "/air-pollution/static/media/slide-5.ebb023ad.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8199f09a.js",
+    "static/css/2.e0686c58.chunk.css",
+    "static/js/2.24e839c2.chunk.js",
+    "static/css/main.50470115.chunk.css",
+    "static/js/main.fc6c78f3.chunk.js"
+  ]
+}
