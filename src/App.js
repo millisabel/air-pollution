@@ -11,6 +11,8 @@ import logo1 from './assets/logo/logo_1.svg';
 import logo2 from './assets/logo/logo_2.svg';
 import logo3 from './assets/logo/logo_3.svg';
 
+
+
 function App() {
     const partners = [
         logo1,
