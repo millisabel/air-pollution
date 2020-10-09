@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/air-pollution/static/css/main.effee4f1.chunk.css",
-    "main.js": "/air-pollution/static/js/main.a70948dd.chunk.js",
-    "main.js.map": "/air-pollution/static/js/main.a70948dd.chunk.js.map",
+    "main.css": "/air-pollution/static/css/main.112c6cd5.chunk.css",
+    "main.js": "/air-pollution/static/js/main.c6ff725f.chunk.js",
+    "main.js.map": "/air-pollution/static/js/main.c6ff725f.chunk.js.map",
     "runtime-main.js": "/air-pollution/static/js/runtime-main.8199f09a.js",
     "runtime-main.js.map": "/air-pollution/static/js/runtime-main.8199f09a.js.map",
     "static/css/2.e0686c58.chunk.css": "/air-pollution/static/css/2.e0686c58.chunk.css",
     "static/js/2.24e839c2.chunk.js": "/air-pollution/static/js/2.24e839c2.chunk.js",
     "static/js/2.24e839c2.chunk.js.map": "/air-pollution/static/js/2.24e839c2.chunk.js.map",
     "index.html": "/air-pollution/index.html",
-    "precache-manifest.7a76ac841aa0c55f93d9f7d86d97c741.js": "/air-pollution/precache-manifest.7a76ac841aa0c55f93d9f7d86d97c741.js",
+    "precache-manifest.052ccf74335c78483bc31a0761b95704.js": "/air-pollution/precache-manifest.052ccf74335c78483bc31a0761b95704.js",
     "service-worker.js": "/air-pollution/service-worker.js",
     "static/css/2.e0686c58.chunk.css.map": "/air-pollution/static/css/2.e0686c58.chunk.css.map",
-    "static/css/main.effee4f1.chunk.css.map": "/air-pollution/static/css/main.effee4f1.chunk.css.map",
+    "static/css/main.112c6cd5.chunk.css.map": "/air-pollution/static/css/main.112c6cd5.chunk.css.map",
     "static/js/2.24e839c2.chunk.js.LICENSE.txt": "/air-pollution/static/js/2.24e839c2.chunk.js.LICENSE.txt",
     "static/media/header.scss": "/air-pollution/static/media/header_bg.e7fd60ee.jpg",
-    "static/media/logo_1.svg": "/air-pollution/static/media/logo_1.24e064dc.svg",
-    "static/media/logo_2.svg": "/air-pollution/static/media/logo_2.2f311a05.svg",
-    "static/media/logo_3.svg": "/air-pollution/static/media/logo_3.0662d9de.svg",
+    "static/media/logo_1.svg": "/air-pollution/static/media/logo_1.50ceb49f.svg",
+    "static/media/logo_2.svg": "/air-pollution/static/media/logo_2.899cd278.svg",
+    "static/media/logo_3.svg": "/air-pollution/static/media/logo_3.e60be19e.svg",
     "static/media/sectors_1.jpg": "/air-pollution/static/media/sectors_1.61cc1648.jpg",
     "static/media/sectors_2.jpg": "/air-pollution/static/media/sectors_2.91feae3f.jpg",
     "static/media/sectors_3.jpg": "/air-pollution/static/media/sectors_3.02cd1c72.jpg",
@@ -34,7 +34,7 @@
     "static/js/runtime-main.8199f09a.js",
     "static/css/2.e0686c58.chunk.css",
     "static/js/2.24e839c2.chunk.js",
-    "static/css/main.effee4f1.chunk.css",
-    "static/js/main.a70948dd.chunk.js"
+    "static/css/main.112c6cd5.chunk.css",
+    "static/js/main.c6ff725f.chunk.js"
   ]
 }

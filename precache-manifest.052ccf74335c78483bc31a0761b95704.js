@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ea5931485d2d4d16012a132373ecca3",
+    "revision": "3ed0df4d7376e4b8ef5025183ede67c4",
     "url": "/air-pollution/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/air-pollution/static/css/2.e0686c58.chunk.css"
   },
   {
-    "revision": "70519403ee7a84b2bc59",
-    "url": "/air-pollution/static/css/main.effee4f1.chunk.css"
+    "revision": "a54c89e8ea5f5e469393",
+    "url": "/air-pollution/static/css/main.112c6cd5.chunk.css"
   },
   {
     "revision": "2183c049deb248be131e",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/air-pollution/static/js/2.24e839c2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70519403ee7a84b2bc59",
-    "url": "/air-pollution/static/js/main.a70948dd.chunk.js"
+    "revision": "a54c89e8ea5f5e469393",
+    "url": "/air-pollution/static/js/main.c6ff725f.chunk.js"
   },
   {
     "revision": "46b0967b3ad70e25e7ea",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/air-pollution/static/media/header_bg.e7fd60ee.jpg"
   },
   {
-    "revision": "24e064dc678f8d96246fd5061f02641f",
-    "url": "/air-pollution/static/media/logo_1.24e064dc.svg"
+    "revision": "50ceb49fff09ecfd8469f91a962bc991",
+    "url": "/air-pollution/static/media/logo_1.50ceb49f.svg"
   },
   {
-    "revision": "2f311a05a79fb86cee6148d658aa8336",
-    "url": "/air-pollution/static/media/logo_2.2f311a05.svg"
+    "revision": "899cd2784349ab5b5a24f5dcee2ffca3",
+    "url": "/air-pollution/static/media/logo_2.899cd278.svg"
   },
   {
-    "revision": "0662d9de8af86fb66060a046fbafe1b5",
-    "url": "/air-pollution/static/media/logo_3.0662d9de.svg"
+    "revision": "e60be19e8cbfbd550ac9a3f905ad359a",
+    "url": "/air-pollution/static/media/logo_3.e60be19e.svg"
   },
   {
     "revision": "61cc1648a1a949637e9df5b4fbda733c",
